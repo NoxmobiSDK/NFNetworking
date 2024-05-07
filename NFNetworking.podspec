@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "NFNetworking"
-  spec.version      = "1.0.1" # Mark
+  spec.version      = "1.0.2" # Mark
   spec.summary      = "Wrapper project of AFNetworking for add privacy manifest.Base on AFNetworking 4.0.1"
   spec.homepage     = "https://github.com/NoxmobiSDK/NFNetworking"
   spec.license      = "MIT"
