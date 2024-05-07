@@ -11,12 +11,9 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/NoxmobiSDK/NFNetworking", :tag => "#{spec.version}" }
   spec.source_files = "NFNetworking.framework/Headers/*.{h}"
 
- spec.resource_bundles = {spec.name => 'NFNetworking.framework/PrivacyInfo.xcprivacy'}
+  spec.resource_bundles = {spec.name => 'NFNetworking.framework/PrivacyInfo.xcprivacy'}
   
   spec.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
-  # spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   
   spec.ios.vendored_frameworks = 'NFNetworking.framework'
-  spec.requires_arc = true
-  spec.frameworks = "Foundation", "UIKit", "AdSupport" #依赖多个系统framework
 end
